@@ -78,7 +78,7 @@ namespace ServUOControlUI
 
         internal static void SaveFiles()
         {
-            if (RTBList.Count > 0)
+            if (RTBList.Count > 0 && !string.IsNullOrEmpty(Properties.ServUOInfo.Default.ServUODir))
             {
                 try
                 {
